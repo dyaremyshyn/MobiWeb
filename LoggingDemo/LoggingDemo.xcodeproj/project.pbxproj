@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3840EE2C7CD5B000721A8F /* LoggingSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 8C3840ED2C7CD5B000721A8F /* LoggingSDK */; };
+		8C3840F52C7CD6C100721A8F /* LoggerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3840F42C7CD6C100721A8F /* LoggerViewModel.swift */; };
+		8C3840FB2C7CD83200721A8F /* LoggerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3840FA2C7CD83200721A8F /* LoggerService.swift */; };
+		8C3840FE2C7CDCB400721A8F /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3840FD2C7CDCB400721A8F /* UIViewController+ShowAlert.swift */; };
+		8C3841012C7CDDA500721A8F /* LoggerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3841002C7CDDA500721A8F /* LoggerPresenter.swift */; };
+		8C3841032C7CDEA900721A8F /* LoggerComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3841022C7CDEA900721A8F /* LoggerComposer.swift */; };
 		8CEDAC702C7BE69700CFFE5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDAC6F2C7BE69700CFFE5D /* AppDelegate.swift */; };
 		8CEDAC722C7BE69700CFFE5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDAC712C7BE69700CFFE5D /* SceneDelegate.swift */; };
-		8CEDAC742C7BE69700CFFE5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDAC732C7BE69700CFFE5D /* ViewController.swift */; };
-		8CEDAC772C7BE69700CFFE5D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8CEDAC762C7BE69700CFFE5D /* Base */; };
+		8CEDAC742C7BE69700CFFE5D /* LoggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDAC732C7BE69700CFFE5D /* LoggerViewController.swift */; };
 		8CEDAC792C7BE69800CFFE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CEDAC782C7BE69800CFFE5D /* Assets.xcassets */; };
 		8CEDAC7C2C7BE69800CFFE5D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8CEDAC7B2C7BE69800CFFE5D /* Base */; };
 		8CEDAC872C7BE69800CFFE5D /* LoggingDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDAC862C7BE69800CFFE5D /* LoggingDemoTests.swift */; };
@@ -49,11 +54,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C3840F42C7CD6C100721A8F /* LoggerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerViewModel.swift; sourceTree = "<group>"; };
+		8C3840FA2C7CD83200721A8F /* LoggerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerService.swift; sourceTree = "<group>"; };
+		8C3840FD2C7CDCB400721A8F /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
+		8C3841002C7CDDA500721A8F /* LoggerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerPresenter.swift; sourceTree = "<group>"; };
+		8C3841022C7CDEA900721A8F /* LoggerComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerComposer.swift; sourceTree = "<group>"; };
 		8CEDAC6C2C7BE69700CFFE5D /* LoggingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoggingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEDAC6F2C7BE69700CFFE5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEDAC712C7BE69700CFFE5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CEDAC732C7BE69700CFFE5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8CEDAC762C7BE69700CFFE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CEDAC732C7BE69700CFFE5D /* LoggerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerViewController.swift; sourceTree = "<group>"; };
 		8CEDAC782C7BE69800CFFE5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CEDAC7B2C7BE69800CFFE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CEDAC7D2C7BE69800CFFE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3840EE2C7CD5B000721A8F /* LoggingSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +99,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C3840E82C7CCBA300721A8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C3840F02C7CD68500721A8F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8C3840FF2C7CDD9700721A8F /* Presenter */,
+				8C3840FC2C7CDCA900721A8F /* Helpers */,
+				8C3840F82C7CD72800721A8F /* Composers */,
+				8C3840F32C7CD6A400721A8F /* ViewControllers */,
+				8CEDAC7A2C7BE69800CFFE5D /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8C3840F12C7CD68A00721A8F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8C3840F42C7CD6C100721A8F /* LoggerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8C3840F22C7CD69200721A8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8CEDAC782C7BE69800CFFE5D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C3840F32C7CD6A400721A8F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CEDAC732C7BE69700CFFE5D /* LoggerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8C3840F82C7CD72800721A8F /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				8C3841022C7CDEA900721A8F /* LoggerComposer.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
+		8C3840F92C7CD82700721A8F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8C3840FA2C7CD83200721A8F /* LoggerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8C3840FC2C7CDCA900721A8F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8C3840FD2C7CDCB400721A8F /* UIViewController+ShowAlert.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8C3840FF2C7CDD9700721A8F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C3841002C7CDDA500721A8F /* LoggerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		8CEDAC632C7BE69700CFFE5D = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +181,7 @@
 				8CEDAC852C7BE69800CFFE5D /* LoggingDemoTests */,
 				8CEDAC8F2C7BE69800CFFE5D /* LoggingDemoUITests */,
 				8CEDAC6D2C7BE69700CFFE5D /* Products */,
+				8C3840E82C7CCBA300721A8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,12 +198,12 @@
 		8CEDAC6E2C7BE69700CFFE5D /* LoggingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8C3840F92C7CD82700721A8F /* Service */,
+				8C3840F22C7CD69200721A8F /* Resources */,
+				8C3840F12C7CD68A00721A8F /* ViewModels */,
+				8C3840F02C7CD68500721A8F /* UI */,
 				8CEDAC6F2C7BE69700CFFE5D /* AppDelegate.swift */,
 				8CEDAC712C7BE69700CFFE5D /* SceneDelegate.swift */,
-				8CEDAC732C7BE69700CFFE5D /* ViewController.swift */,
-				8CEDAC752C7BE69700CFFE5D /* Main.storyboard */,
-				8CEDAC782C7BE69800CFFE5D /* Assets.xcassets */,
-				8CEDAC7A2C7BE69800CFFE5D /* LaunchScreen.storyboard */,
 				8CEDAC7D2C7BE69800CFFE5D /* Info.plist */,
 			);
 			path = LoggingDemo;
@@ -157,6 +243,9 @@
 			dependencies = (
 			);
 			name = LoggingDemo;
+			packageProductDependencies = (
+				8C3840ED2C7CD5B000721A8F /* LoggingSDK */,
+			);
 			productName = LoggingDemo;
 			productReference = 8CEDAC6C2C7BE69700CFFE5D /* LoggingDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +318,9 @@
 				Base,
 			);
 			mainGroup = 8CEDAC632C7BE69700CFFE5D;
+			packageReferences = (
+				8C3840E72C7CCB6900721A8F /* XCRemoteSwiftPackageReference "LoggingSPM" */,
+			);
 			productRefGroup = 8CEDAC6D2C7BE69700CFFE5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -247,7 +339,6 @@
 			files = (
 				8CEDAC792C7BE69800CFFE5D /* Assets.xcassets in Resources */,
 				8CEDAC7C2C7BE69800CFFE5D /* Base in Resources */,
-				8CEDAC772C7BE69700CFFE5D /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +363,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CEDAC742C7BE69700CFFE5D /* ViewController.swift in Sources */,
+				8C3841012C7CDDA500721A8F /* LoggerPresenter.swift in Sources */,
+				8C3840FB2C7CD83200721A8F /* LoggerService.swift in Sources */,
+				8C3840F52C7CD6C100721A8F /* LoggerViewModel.swift in Sources */,
+				8C3840FE2C7CDCB400721A8F /* UIViewController+ShowAlert.swift in Sources */,
+				8CEDAC742C7BE69700CFFE5D /* LoggerViewController.swift in Sources */,
 				8CEDAC702C7BE69700CFFE5D /* AppDelegate.swift in Sources */,
 				8CEDAC722C7BE69700CFFE5D /* SceneDelegate.swift in Sources */,
+				8C3841032C7CDEA900721A8F /* LoggerComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +407,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8CEDAC752C7BE69700CFFE5D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8CEDAC762C7BE69700CFFE5D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8CEDAC7A2C7BE69800CFFE5D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -466,8 +554,8 @@
 				INFOPLIST_FILE = LoggingDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,8 +590,8 @@
 				INFOPLIST_FILE = LoggingDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,6 +725,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C3840E72C7CCB6900721A8F /* XCRemoteSwiftPackageReference "LoggingSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dyaremyshyn/LoggingSPM";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C3840ED2C7CD5B000721A8F /* LoggingSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C3840E72C7CCB6900721A8F /* XCRemoteSwiftPackageReference "LoggingSPM" */;
+			productName = LoggingSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8CEDAC642C7BE69700CFFE5D /* Project object */;
 }

@@ -1,0 +1,15 @@
+{
+  "originHash" : "3803126db757fbbced254b5af02dca5c85f53ad61f49e14c469c1b8a8e0f833a",
+  "pins" : [
+    {
+      "identity" : "loggingspm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dyaremyshyn/LoggingSPM",
+      "state" : {
+        "revision" : "b6a1c0f5867d1c942809f99eab9ce14c1fb5ffc2",
+        "version" : "1.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
