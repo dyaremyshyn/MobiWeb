@@ -2,6 +2,9 @@
 
 Given challenge: [ios-developer.pdf](https://github.com/user-attachments/files/16751365/ios-developer.pdf)
 
+![image](https://github.com/user-attachments/assets/eafb42f2-9249-4a6c-acd4-476abd6211eb)
+
+
 ## Implemented Key Requirements
 - [X] iPhone and iPad oriented Demo app
 - [X] Implementation and Integration of Logger SDK Framework
