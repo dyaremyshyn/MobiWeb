@@ -18,3 +18,5 @@ Given challenge: [ios-developer.pdf](https://github.com/user-attachments/files/1
 ## Architecture
 **MAKE IT WORK, MAKE IT PERFECT**<br>
 I followed <ins>**clean architecture**</ins> principles by focusing on separation of concerns, dependency inversion, and keeping core logic independent of external frameworks. This methodology ensures that each layer functions independently, making the project robust, maintainable, flexible, and scalable. Additionally, this approach simplifies the testing of implemented features and facilitates the integration of new ones.
+
+### Thanks for reviewing my challenge, I am open to any suggestions and improvements! :)
